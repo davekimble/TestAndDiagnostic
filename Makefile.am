@@ -1,7 +1,7 @@
 SUBDIRS = source
 
 lib_LTLIBRARIES=libdiagnostic.la
-libdiagnostic_la_CPPFLAGS= -D_ANSC_LINUX -D_ANSC_USER -D_ANSC_LITTLE_ENDIAN_ -D_COSA_SIM_ -I$(top_srcdir)/source/diagnostic/include -I$(top_srcdir)/source/diagnostic/BbhmDiagIpPing -I$(top_srcdir)/source/dmltad -I$(top_srcdir)/source/TandDSsp
+libdiagnostic_la_CPPFLAGS= -D_ANSC_LINUX -D_ANSC_USER -D_ANSC_LITTLE_ENDIAN_ -I$(top_srcdir)/source/diagnostic/include -I$(top_srcdir)/source/diagnostic/BbhmDiagIpPing -I$(top_srcdir)/source/dmltad -I$(top_srcdir)/source/TandDSsp
 libdiagnostic_la_LDFLAGS= -lccsp_common
 libdiagnostic_la_SOURCES= \
 	source/diagnostic/BbhmDiagDownload/bbhm_download_interface.c \
