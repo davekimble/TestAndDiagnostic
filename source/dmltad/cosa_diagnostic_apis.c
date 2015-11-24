@@ -628,6 +628,8 @@ CosaDmlDiagGetConfigs
     return hDiagInfo;
 }
 
+/* put the prototype inline to eliminate a 64-bit bug */
+PCOSA_DML_DIAG_ARP_TABLE CosaDmlDiagGetARPTablePriv(ANSC_HANDLE, PULONG);
 PCOSA_DML_DIAG_ARP_TABLE
 CosaDmlDiagGetARPTable
 
